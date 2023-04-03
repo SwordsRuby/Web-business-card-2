@@ -1,0 +1,168 @@
+/*zeroing*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+.basic {
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+  background: #f5f6f6; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #f5f6f6 0%,
+    #dbdce2 21%,
+    #b8bac6 49%,
+    #dddfe3 80%,
+    #f5f6f6 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #f5f6f6 0%,
+    #dbdce2 21%,
+    #b8bac6 49%,
+    #dddfe3 80%,
+    #f5f6f6 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #f5f6f6 0%,
+    #dbdce2 21%,
+    #b8bac6 49%,
+    #dddfe3 80%,
+    #f5f6f6 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  transition: 1s;
+}
+
+.contact_information_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.heading {
+  color: black;
+  font-size: 2rem;
+  margin: 2%;
+  transition: 0.5s;
+}
+
+.paragraph_block {
+  color: black;
+  font-size: 1rem;
+  margin: 2%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.paragraph_block:hover,
+.link:hover {
+  font-size: 1.5rem;
+}
+
+.contact_information_block:hover {
+  border: 5px dashed black;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .paragraph_block {
+    font-size: 2rem;
+  }
+
+  .paragraph_block:hover,
+  .link:hover {
+    font-size: 2.5rem;
+  }
+}
